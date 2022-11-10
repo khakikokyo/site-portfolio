@@ -1,0 +1,107 @@
+/* common */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+header > .inner {
+  height: 100px;
+  margin: 0 auto;
+}
+header .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  color: #656565;
+  cursor: pointer;
+}
+header .title:hover {
+  color: #000;
+}
+header .menu {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  display: flex;
+}
+header .menu ul.item {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .menu ul.item li {
+  position: relative;
+}
+header .menu ul.item li a {
+  font-size: 18px;
+  padding: 11px 30px;
+  display: block;
+  color: #656565;
+}
+header .menu ul.item li a:hover {
+  color: #000;
+}
+
+/* main_bg */
+.main {
+  margin-top: 100px;
+  background-image: url('../img/instrument.png');
+  background-position: center;
+}
+.main .inner {
+  height: 900px;
+}
+.main .inner .main-title {
+  font-size: 60px;
+  position: absolute;
+  top: 500px;
+  right: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: -4px;
+}
+.main .inner .main-title span {
+  font-size: 90px;
+}
+
+/* about */
+.about {
+  
+}
+.about .inner {
+  height: 560px;
+}
+.about .photo {
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  position: absolute;
+}
+.about .photo1 {
+  top: 70px;
+  left: 0;
+}
+.about .photo2 {
+  top: 280px;
+  left: 250px;
+}
