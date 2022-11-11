@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
+  height: 3000px;
 }
 a {
   text-decoration: none;
@@ -75,8 +76,9 @@ header .menu ul.item li a:hover {
 }
 .main .inner .main-title {
   font-size: 60px;
+  font-weight: 700;
   position: absolute;
-  top: 500px;
+  top: 400px;
   right: 0;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: -4px;
@@ -87,21 +89,29 @@ header .menu ul.item li a:hover {
 
 /* about */
 .about {
-  
+  background-color: #dadada;
 }
 .about .inner {
-  height: 560px;
+  height: 600px;
+}
+.about .inner .picture img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  filter: grayscale(80%) contrast(120%);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about .inner .picture:hover img {
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  filter: none;
 }
 .about .photo {
-  border-radius: 50%;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
   position: absolute;
-}
-.about .photo1 {
-  top: 70px;
-  left: 0;
-}
-.about .photo2 {
-  top: 280px;
-  left: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  display: block;
 }
