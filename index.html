@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHY's Portfolio</title>
+  <title>박혜영 포트폴리오</title>
 
   <!-- 오픈 그래프(The Open Graph protocol) -->
   <meta property="og:type" content="website" />
@@ -15,8 +15,6 @@
   <!-- 브라우저 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 
-  <link rel="stylesheet" href="./css/main.css" />
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
@@ -24,8 +22,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
   <!-- ScrollMagic cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
   <script defer src="./js/main.js"></script>
 </head>
@@ -52,9 +58,9 @@
   </section>
 
   <!-- about_bg -->
+  <div class="section-title"><p>ABOUT ME</p></div>
   <section class="about scroll-spy">
     <div class="inner">
-      <div class="section-title"><p>ABOUT ME</p></div>
       <div class="picture">
         <img src="./img/hyeyoung1.jpg" alt="hyeyoung2" class="photo back-to-position to-right" />
       </div>
@@ -90,6 +96,48 @@
           <li><img src="./img/icon_mail.png" alt="icon-mail" /></li>
           <li><span>이메일</span><br /> jimirar90@naver.com</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <div class="section-title skills-title"><p>SKILLS</p></div>
+  <section class="skills">
+    <div class="inner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/logo_html-5.png" alt="HTML5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_css-3.png" alt="CSS3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_js.png" alt="JS" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_react.png" alt="react" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_sass.png" alt="sass" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_bootstrap.png" alt="bootstrap" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_git.png" alt="git" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/logo_github.png" alt="github" />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back_ios</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward_ios</div>
       </div>
     </div>
   </section>
