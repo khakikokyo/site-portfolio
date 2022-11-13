@@ -86,7 +86,10 @@ header .menu ul.item li a:hover {
 .main {
   margin-top: 100px;
   background-image: url('../img/instrument.png');
+  background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .main .inner {
   height: 900px;
@@ -105,9 +108,6 @@ header .menu ul.item li a:hover {
 }
 
 /* about */
-.about {
-  /* background-color: #f6f6f6; */
-}
 .about .inner {
   height: 600px;
 }
@@ -150,7 +150,7 @@ header .menu ul.item li a:hover {
 }
 .about .inner .text {
   position: absolute;
-  top: 26%;
+  top: 28%;
   right: 20px;
 }
 .about .inner .text p {
@@ -162,12 +162,44 @@ header .menu ul.item li a:hover {
   font-size: 25px;
   font-weight: 700;
   color: #000;
+  padding-bottom: 10px;
+  line-height: 1.4;
 }
 .about .inner .text span {
   font-size: 30px;
   border-bottom: 1px solid #f9c62d;
   padding-bottom: 3px;
 }
-.about .inner .icon {
-  
+
+/* about-icon */
+.about-icon {
+  background-color: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  background-position: center;
+}
+.about-icon .inner {
+  height: 100px;
+}
+.about-icon .inner .icon-line {
+  position: absolute;
+  top: 19px;
+  left: -120px;
+}
+.about-icon .inner .icon-line, ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 125px;
+}
+.about-icon .inner .icon-line ul span {
+  font-size: 23px;
+  font-weight: 700;
+}
+.about-icon .inner ul li {
+  position: relative;
+  font-size: 18px;
+  color: #444;
+}
+.about-icon .inner ul li img {
+  margin: 0 30px 0 20px;
 }
