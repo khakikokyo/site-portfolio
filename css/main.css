@@ -36,7 +36,7 @@ a {
   font-size: 35px;
   font-weight: 700;
   font-family: 'Black Han Sans', sans-serif;
-  color: #444;
+  color: #000;
   letter-spacing: 3px;
   display: flex;
   box-sizing: border-box;
@@ -46,7 +46,7 @@ a {
   padding-bottom: 5px;
 }
 .section-title p {
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #000;
   padding-bottom: 8px;
 }
 
@@ -126,7 +126,17 @@ header .menu ul.item li a:hover {
 
 /* about */
 .about .inner {
-  height: 600px;
+  height: 520px;
+}
+.about .inner .picture p {
+  position: absolute;
+  z-index: 1;
+  transform: translate(40%, -10%);
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 35px;
+  color: #cd838a;
 }
 .about .inner .picture img {
   width: 400px;
@@ -142,7 +152,7 @@ header .menu ul.item li a:hover {
 }
 .about .photo {
   position: absolute;
-  top: 37%;
+  top: 43%;
   left: 47%;
   transform: translate(-120%, -50%);
   display: block;
@@ -166,16 +176,16 @@ header .menu ul.item li a:hover {
 }
 .about .inner .text span {
   font-size: 30px;
-  border-bottom: 1px solid #f9c62d;
+  color: #cd838a;
+  border-bottom: 2px solid #f9c62d;
   padding-bottom: 3px;
 }
 
 /* about-icon */
 .about-icon {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border: 1px solid #f2f2f2;
   background-position: center;
-  margin-top: 10px;
 }
 .about-icon .inner {
   height: 120px;
@@ -205,13 +215,15 @@ header .menu ul.item li a:hover {
 }
 
 /* skills */
+.skills {
+  background-color: #f9c62d;
+}
 .skills .inner {
-  width: 70%;
-  padding: 40px 0 40px 55px;
+  padding: 40px 0;
 }
 .skills .swiper-container {
   width: 100%;
-  height: 120px;
+  height: 250px;
 }
 .skills .swiper-prev,
 .skills .swiper-next {
@@ -224,7 +236,7 @@ header .menu ul.item li a:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 150px;
   bottom: 0;
   margin: auto;
 }
@@ -237,4 +249,7 @@ header .menu ul.item li a:hover {
 .skills .swiper-container .swiper-wrapper .swiper-slide img {
   width: 120px;
   height: 120px;
+}
+.skills .swiper-container .swiper-wrapper .swiper-slide img:first-child {
+  padding-left: 50px;
 }
