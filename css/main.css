@@ -183,7 +183,6 @@ header .menu ul.item li a:hover {
 
 /* about-icon */
 .about-icon {
-  /* background-color: #f9f9f9; */
   border: 1px solid #f2f2f2;
   background-position: center;
 }
@@ -269,7 +268,7 @@ header .menu ul.item li a:hover {
   background-size: cover;
 }
 .version-control .inner {
-  height: 700px;
+  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,4 +322,74 @@ header .menu ul.item li a:hover {
   background-color: #ffd59e;
   color: #fc3819;
   border: 2px solid #fc3819;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #e9e9e9;
+}
+.portfolio .portfolio-line {
+  position: relative;
+}
+.portfolio .portfolio-line img {
+  width: 850px;
+  height: 450px;
+}
+.portfolio .portfolio-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+}
+.portfolio .portfolio-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+}
+.portfolio .portfolio-line .inner {
+  height: 900px;
+  display: flex;
+}
+.portfolio .portfolio-line .inner__left {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+}
+.portfolio .portfolio-line .inner__right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.7;
+}
+.portfolio .portfolio-line .inner__right p:first-child {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #333;
+}
+.portfolio .portfolio-line .inner__right .btn-group {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .portfolio-line .inner__right a {
+  font-size: 20px;
+  color: #333;
+  padding: 15px;
+}
+.portfolio .portfolio-line .inner__right a img {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0 auto;
+  padding-right: 10px;
 }

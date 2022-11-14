@@ -1,4 +1,4 @@
-// about
+// About
 // ScrollMagic
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function(spyEl) {
@@ -11,7 +11,7 @@ spyEls.forEach(function(spyEl) {
     .addTo(new ScrollMagic.Controller());
 });
 
-// skills
+// Skills
 // Swiper
 new Swiper('.skills .swiper-container', {
   autoplay: {
@@ -24,4 +24,11 @@ new Swiper('.skills .swiper-container', {
     prevEl: '.skills .swiper-prev',
     nextEl: '.skills .swiper-next'
   },
+});
+
+// Portfolio
+// Swiper
+new Swiper('.portfolio .swiper-container' ,{
+  autoplay: {delay: 2000},
+  loop: true
 });
