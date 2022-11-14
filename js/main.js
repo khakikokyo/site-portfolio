@@ -15,7 +15,7 @@ spyEls.forEach(function(spyEl) {
 // Swiper
 new Swiper('.skills .swiper-container', {
   autoplay: {
-    delay: 10000
+    delay: 5000
   },
   loop: true,
   spaceBetween: 10,
