@@ -32,3 +32,23 @@ new Swiper('.portfolio .swiper-container' ,{
   autoplay: {delay: 2000},
   loop: true
 });
+
+// To Top Button
+// GSAP/ScrollToplugin
+const toTopEl = document.querySelector('#to-top');
+window.addEventListener('scroll', function() {
+  if(window.scrollY > 500) {
+    gsap.to(toTopEl, .2, {
+      x: 0
+    });
+  } else {
+    gsap.to(toTopEl, .2, {
+      x: 200,
+    });
+  }
+}, 300);
+toTopEl.addEventListener('click', function() {
+  gsap.to(window, .7, {
+    scrollTo: 0
+  });
+});

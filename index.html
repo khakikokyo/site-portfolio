@@ -28,6 +28,9 @@
 
   <link rel="stylesheet" href="./css/main.css" />
 
+  <!-- GSAP & ScrollToplugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- ScrollMagic cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Swiper -->
@@ -43,9 +46,9 @@
       <a href="/" class="title">PHY's Portfolio</a>
       <div class="menu">
         <ul class="item">
-          <li><a href="javascript:void(0)">About me</a></li>
-          <li><a href="javascript:void(0)">Skills</a></li>
-          <li><a href="javascript:void(0)">Portfolio</a></li>
+          <li><a href="#scroll-about">About me</a></li>
+          <li><a href="#scroll-skills">Skills</a></li>
+          <li><a href="#scroll-portfolio">Portfolio</a></li>
         </ul>
       </div>
     </div>
@@ -60,7 +63,7 @@
 
   <!-- about_bg -->
   <section class="about scroll-spy">
-    <div class="section-title"><p>ABOUT ME</p></div>
+    <div class="section-title" id="scroll-about"><p>ABOUT ME</p></div>
     <div class="inner">
       <div class="picture">
         <img src="./img/hyeyoung1.jpg" alt="hyeyoung2" class="photo back-to-position to-right" />
@@ -105,7 +108,7 @@
   <!-- skills -->
   <section class="skills">
     <div class="inner">
-      <div class="section-title"><p>SKILLS</p></div>
+      <div class="section-title" id="scroll-skills"><p>SKILLS</p></div>
       <div class="skills-inner">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -163,7 +166,7 @@
         </div>
         <div class="back">
           <img src="./img/git_back.png" alt="back" />
-          <a href="https://github.com/khakikokyo" class="btn">GitHub::Khakikokyo</a>
+          <a href="https://github.com/khakikokyo" target="_blank" class="btn">GitHub::Khakikokyo</a>
         </div>
       </div>
     </div>
@@ -172,6 +175,7 @@
   <!-- Portfolio -->
   <section class="portfolio">
     <div class="portfolio-line">
+      <div class="section-title" id="scroll-portfolio"><p>PORTFOLIO</p></div>
       <div class="bg-left"></div>
       <div class="bg-right"></div>
       <div class="inner">
@@ -220,5 +224,10 @@
       </div>
     </div>
   </section>
+
+  <!-- To Top Button -->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
 </body>
 </html>
