@@ -46,9 +46,9 @@
       <a href="/" class="title">PHY's Portfolio</a>
       <div class="menu">
         <ul class="item">
-          <li><a href="#scroll-about">About me</a></li>
-          <li><a href="#scroll-skills">Skills</a></li>
-          <li><a href="#scroll-portfolio">Portfolio</a></li>
+          <li class="header-about">About me</li>
+          <li class="header-skills">Skills</li>
+          <li class="header-portfolio">Portfolio</li>
         </ul>
       </div>
     </div>
@@ -61,9 +61,11 @@
     </div>
   </section>
 
-  <!-- about_bg -->
+  <!-- about -->
   <section class="about scroll-spy">
-    <div class="section-title" id="scroll-about"><p>ABOUT ME</p></div>
+    <div class="inner-title" id="scroll-about">
+      <div class="section-title"><p>ABOUT ME</p></div>
+    </div>
     <div class="inner">
       <div class="picture">
         <img src="./img/hyeyoung1.jpg" alt="hyeyoung2" class="photo back-to-position to-right" />
@@ -90,6 +92,10 @@
     <div class="inner">
       <div class="icon-line">
         <ul>
+          <li><img src="./img/icon_face.png" alt="icon-face" /></li>
+          <li><span>이름</span><br /> 박혜영</li>
+        </ul>
+        <ul>
           <li><img src="./img/icon_calendar.png" alt="icon-calendar" /></li>
           <li><span>생년월일</span><br /> 1990.12.06</li>
         </ul>
@@ -107,8 +113,10 @@
 
   <!-- skills -->
   <section class="skills">
+    <div class="inner-title" id="scroll-skills">
+      <div class="section-title"><p>SKILLS</p></div>
+    </div>
     <div class="inner">
-      <div class="section-title" id="scroll-skills"><p>SKILLS</p></div>
       <div class="skills-inner">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -174,8 +182,10 @@
 
   <!-- Portfolio -->
   <section class="portfolio">
+    <div class="inner-title" id="scroll-portfolio">
+      <div class="section-title"><p>PORTFOLIO</p></div>
+    </div>
     <div class="portfolio-line">
-      <div class="section-title" id="scroll-portfolio"><p>PORTFOLIO</p></div>
       <div class="bg-left"></div>
       <div class="bg-right"></div>
       <div class="inner">

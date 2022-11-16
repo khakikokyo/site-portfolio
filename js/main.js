@@ -1,3 +1,22 @@
+// Header
+// scroll
+const items = document.querySelector('.item');
+const menuHeight = document.querySelector('.menu').offsetHeight;
+const scrollAbout = document.querySelector('#scroll-about').offsetTop;
+const scrollSkills = document.querySelector('#scroll-skills').offsetTop;
+const scrollPortfolio = document.querySelector('#scroll-portfolio').offsetTop;
+
+items.addEventListener('click', function(item) {
+  console.log(item.target.className);
+  if(item.target.className == 'header-about') {
+    window.scrollTo({top: scrollAbout - menuHeight, behavior: 'smooth'});
+  } else if(item.target.className == 'header-skills') {
+    window.scrollTo({top: scrollSkills - menuHeight, behavior: 'smooth'});
+  } else if(item.target.className == 'header-portfolio') {
+    window.scrollTo({top: scrollPortfolio - menuHeight, behavior: 'smooth'});
+  }
+});
+
 // About
 // ScrollMagic
 const spyEls = document.querySelectorAll('section.scroll-spy');
@@ -34,7 +53,7 @@ new Swiper('.portfolio .swiper-container' ,{
 });
 
 // To Top Button
-// GSAP/ScrollToplugin
+// GSAP & ScrollToplugin
 const toTopEl = document.querySelector('#to-top');
 window.addEventListener('scroll', function() {
   if(window.scrollY > 500) {
