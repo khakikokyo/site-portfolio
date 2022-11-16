@@ -342,14 +342,14 @@ header .menu ul.item li:hover {
   height: 980px;
 }
 .portfolio .inner {
-  width: 70%;
+  width: 80%;
   height: 500px;
   top: 300px;
   bottom: 0;
 }
 .portfolio .portfolio-line img {
-  width: 850px;
-  height: 450px;
+  width: 750px;
+  height: 400px;
 }
 .portfolio .portfolio-line .bg-left {
   position: absolute;
