@@ -47,21 +47,12 @@ new Swiper('.skills .swiper-container', {
 // Portfolio
 // Swiper
 new Swiper('.portfolio .swiper-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
   autoplay: {
     delay: 2000
   },
   loop: true,
-  slidesPerView: 1,
-  breakpoints: {
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 50
-    }
-  }
 });
 
 // To Top Button
