@@ -135,10 +135,13 @@ header .menu ul.item li:hover {
   top: 300px;
   bottom: 0;
 }
+.about .inner .picture {
+  position: relative;
+}
 .about .inner .picture p {
   position: absolute;
   z-index: 1;
-  transform: translate(140%, 30%);
+  transform: translate(140%, 20%);
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   line-height: 1.2;
@@ -152,17 +155,14 @@ header .menu ul.item li:hover {
   filter: grayscale(80%) contrast(120%);
   transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 10%;
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  transform: translate(-120%, 12%);
 }
 .about .inner .picture:hover img {
   box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
   filter: none;
-}
-.about .photo {
-  position: absolute;
-  top: 30%;
-  left: 47%;
-  transform: translate(-120%, -50%);
-  display: block;
 }
 .about .inner .text {
   position: absolute;
@@ -342,7 +342,7 @@ header .menu ul.item li:hover {
   height: 980px;
 }
 .portfolio .inner {
-  width: 70%;
+  width: 90%;
   height: 500px;
   top: 300px;
   bottom: 0;
@@ -355,15 +355,11 @@ header .menu ul.item li:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 65%;
-  height: 100%;
 }
 .portfolio .portfolio-line .bg-right {
   position: absolute;
   top: 0;
   right: 0;
-  width: 35%;
-  height: 100%;
 }
 .portfolio .portfolio-line {
   width: 100%;
@@ -372,14 +368,21 @@ header .menu ul.item li:hover {
 .portfolio .portfolio-line .inner {
   display: flex;
 }
+.portfolio .portfolio-line .inner__left .swiper-container {
+  width: 70%;
+}
+.portfolio .portfolio-line .inner__left .swiper-container .swiper-wrapper {
+  width: 100%;
+}
 .portfolio .portfolio-line .inner__left {
   width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
+  margin-right: -120px;
 }
 .portfolio .portfolio-line .inner__right {
-  width: 100%;
+  width: 30%;
   height: 110%;
   display: flex;
   justify-content: center;
@@ -402,7 +405,7 @@ header .menu ul.item li:hover {
 .portfolio .portfolio-line .inner__right a {
   font-size: 20px;
   color: #333;
-  padding: 15px;
+  padding: 25px;
   box-sizing: border-box;
 }
 .portfolio .portfolio-line .inner__right a img {
@@ -410,7 +413,7 @@ header .menu ul.item li:hover {
   height: 35px;
   float: left;
   margin: 0 auto;
-  padding-right: 10px;
+  padding-right: 13px;
 }
 
 /* To Top Button */

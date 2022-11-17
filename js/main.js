@@ -7,7 +7,6 @@ const scrollSkills = document.querySelector('#scroll-skills').offsetTop;
 const scrollPortfolio = document.querySelector('#scroll-portfolio').offsetTop;
 
 items.addEventListener('click', function(item) {
-  console.log(item.target.className);
   if(item.target.className == 'header-about') {
     window.scrollTo({top: scrollAbout - menuHeight, behavior: 'smooth'});
   } else if(item.target.className == 'header-skills') {
@@ -47,9 +46,22 @@ new Swiper('.skills .swiper-container', {
 
 // Portfolio
 // Swiper
-new Swiper('.portfolio .swiper-container' ,{
-  autoplay: {delay: 2000},
-  loop: true
+new Swiper('.portfolio .swiper-container', {
+  autoplay: {
+    delay: 2000
+  },
+  loop: true,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 50
+    }
+  }
 });
 
 // To Top Button
